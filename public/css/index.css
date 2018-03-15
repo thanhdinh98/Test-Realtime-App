@@ -1,0 +1,66 @@
+body{
+    background-image: url("../img/pic1.jpg");
+    background-size: 100% 637px;
+}
+#canvas{
+    padding: 0;
+}
+#chat{
+    padding: 0;
+}
+#con1{
+    padding: 0;
+}
+#r1{
+    margin: 0;
+}
+#sendMessage{
+    width: 100%;
+}
+#clearScreen{
+    margin-top: 15px;
+}
+#message{
+    margin-top: 15px;
+}
+#chatbox{
+    overflow-y: auto;
+    height: 300px;
+    background-color: rgba(100, 105, 112, 0.5)
+}
+#typing{
+    position: absolute;
+    top: 275px;
+    color: white;
+}
+#user-message{
+    margin-bottom: 10px;
+    background-color: rgba(36, 37, 38, 0.3);
+    color: white;
+}
+#sr1{
+    margin: 0;
+}
+#sc1{
+    padding: 0;
+}
+#sc2{
+    padding: 0;
+}
+#logUser{
+    padding: 6px 12px 6px 12px;
+    margin-top: 15px;
+}
+#success{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#user-name{
+    padding: 3px;
+    color: rgb(168, 201, 255);
+}
+#text{
+    padding: 10px 15px 10px 15px;
+    color: rgb(222, 226, 232);
+}

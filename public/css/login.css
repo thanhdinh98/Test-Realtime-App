@@ -1,0 +1,11 @@
+body{
+    background-image: url("../img/pic3.jpg");
+    background-size: 100% 637px;
+}
+#submit{
+    width: 100%;
+}
+#form{
+    margin-top: 100px;
+    width: 50%;
+}

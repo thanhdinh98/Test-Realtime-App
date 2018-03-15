@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Duyen's classroom</title>
+
+  </head>
+  <body>
+
+    <div class="container" id="con1">
+        <div class="row" id="r1">
+            <div class="col-8" id="canvas"></div>
+            <div class="col-4" id="chat">
+                <div id="chatbox">
+                    <div id="typing"></div>
+                </div>
+                <textarea class="form-control" id="message"></textarea>
+                <input type="submit" value="Send message" id="sendMessage" class="btn btn-primary">
+                <div class="row" id="sr1">
+                    <div class="col-4" id="sc1">
+                        <button class="btn btn-primary" id="clearScreen">Clear Screen</button>    
+                    </div>
+                    <div class="col" id="sc2">
+                        <div class="alert alert-primary text-center" id="logUser">You are logging as <span class="alert alert-success" id="success" data-id="<%=user._id%>"><%=user.username%></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="js/socket_client.js"></script>
+    <script src="js/sketch.js"></script>
+
+  </body>
+</html>
