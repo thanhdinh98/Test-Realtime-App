@@ -12,7 +12,8 @@ const userRoutes = ()=>{
 
     Router.route(`/home`)
     .all(userController.is_user)
-    .get(userController.home);
+    .get(userController.home_get)
+    .post(userController.home_post);
 
     return Router;
 }

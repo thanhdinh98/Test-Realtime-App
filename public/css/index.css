@@ -1,12 +1,13 @@
 body{
     background-image: url("../img/pic1.jpg");
-    background-size: 100% 637px;
+    background-size: 100% 700px;
 }
 #canvas{
     padding: 0;
 }
 #chat{
     padding: 0;
+    padding-left: 10px;
 }
 #con1{
     padding: 0;
@@ -63,4 +64,36 @@ body{
 #text{
     padding: 10px 15px 10px 15px;
     color: rgb(222, 226, 232);
+}
+#redColor{
+    width: 100%;
+}
+#blackColor{
+    width: 100%;
+}
+#erase{
+    width: 100%;
+}
+#unErase{
+    width: 100%;
+}
+#transBtn{
+    width: 100%;
+}
+#sc2{
+    padding-right: 0;
+    padding-left: 15px; 
+}
+#sc3{
+    padding-left: 0;
+}
+#sr2{
+    margin-top: 15px;
+}
+#output{
+    height: 90px;
+    background-color: rgba(100, 105, 112, 0.5);
+    color: black;
+    font-size: 30px;
+    font-weight: 10px;
 }

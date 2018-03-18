@@ -7,10 +7,11 @@ const messageSchema = new Schema({
         ref: `User`
     },
     messages: [{
-        from_user:{
+        from_user_id:{
             type: Schema.Types.ObjectId,
             ref: `User`
         },
+        from_user_name: String,
         text: String
     }]
 });

@@ -12,22 +12,48 @@
   </head>
   <body>
 
-    <div class="container" id="con1">
+    <div class="container-fluid" id="con1">
         <div class="row" id="r1">
-            <div class="col-8" id="canvas"></div>
+            <div class="col-6" id="canvas"></div>
             <div class="col-4" id="chat">
                 <div id="chatbox">
                     <div id="typing"></div>
                 </div>
-                <textarea class="form-control" id="message"></textarea>
+                <textarea class="form-control" id="message" rows="1"></textarea>
                 <input type="submit" value="Send message" id="sendMessage" class="btn btn-primary">
-                <div class="row" id="sr1">
+                <div class="row" id="sr1">                    
                     <div class="col-4" id="sc1">
                         <button class="btn btn-primary" id="clearScreen">Clear Screen</button>    
                     </div>
                     <div class="col" id="sc2">
                         <div class="alert alert-primary text-center" id="logUser">You are logging as <span class="alert alert-success" id="success" data-id="<%=user._id%>"><%=user.username%></span></div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="submit" class="btn btn-danger" id="redColor" value="Red Color">
+                        <input type="submit" class="btn btn-dark" id="blackColor" value="Black Color" style="display: none;">
+                    </div>
+                    <div class="col">
+                        <input type="submit" class="btn btn-primary" id="erase" value="Erase">
+                        <input type="submit" class="btn btn-secondary" id="unErase" value="UnErase" style="display:none;">
+                    </div>
+                </div>
+                <div class="row" id="sr2">
+                    <div class="col-8" id="sc2">
+                        <input type="text" class="form-control" id="transInput">
+                    </div>
+                    <div class="col-4" id="sc3">
+                        <button class="btn btn-primary" id="transBtn">Translate</button>
+                    </div>
+                </div>
+                <div id="output" class="alert alert-light text-center"></div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-header text-center alert-primary">Users</div>
+                    <ul class="list-group list-group-flush" id="online">
+                    </ul>
                 </div>
             </div>
         </div>
@@ -38,6 +64,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="js/getMessage.js"></script>
     <script src="js/socket_client.js"></script>
     <script src="js/sketch.js"></script>
 

@@ -1,4 +1,5 @@
 const User = require(`../models/user`);
+const Message = require(`../models/message`);
 
 const userController = ()=>{
 
@@ -18,12 +19,22 @@ const userController = ()=>{
         res.redirect(`/home`);
     }
 
-    function home(req, res){
-        User.findOne({username: req.user.username}, (err, user)=>{
+    function homeGet(req, res){
+        res.render(`index`, {user: req.user});
+    }
+
+    function homePost(req, res){
+        User.findOne({username: req.user.username}, (err,user)=>{
             if(err){
                 console.log(err);
             }else{
-                res.render(`index`, {user: user});
+                Message.findOne({user: user._id}, (err, message)=>{
+                    if(err){
+                        console.log(err);
+                    }else{
+                        res.json(message);
+                    }
+                });
             }
         });
     }
@@ -32,7 +43,8 @@ const userController = ()=>{
         login_get: loginGet,
         login_post: loginPost,
         is_user: isUser,
-        home: home
+        home_get: homeGet,
+        home_post: homePost
     }
 }
 
