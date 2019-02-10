@@ -1,13 +1,12 @@
-This is my first app to test real-time services with socket.io.
+# App Chat Realtime (Server render)
+> Ứng dụng tương tác realtime giữa 1 và nhiều client với nhau (kiến trúc client-server)
 
-To use this app please follow all the steps below:
+[![](./images/i1.png)](https://www.youtube.com/watch?v=NEQKpZ9gnsg)
 
-1 Clone this app to your computer.
+## Công nghệ sử dụng
+- Framework Express.js
+- Fremework Socket.io
+- NoSQL database (mongodb)
 
-2 Replace your's user informations in "ADD_YOUR_USER_HERE.js" file.
-
-3 Run: npm run add (This method is for adding your new user to your database).
-
-4 Run: npm run app (This method is for running the app).
-
-Test the app - Enjoy and have fun.
+## Thực hiện
+**Thanh Dinh**
